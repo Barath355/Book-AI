@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ask AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 bg-gray-100">
+
+<h1 class="text-2xl font-bold mb-4">🤖 Ask About Books</h1>
+
+<input id="question" type="text" 
+       placeholder="Ask something..."
+       class="w-full p-2 border rounded mb-4"/>
+
+<button onclick="ask()" 
+        class="bg-blue-500 text-white px-4 py-2 rounded">
+    Ask
+</button>
+
+<div id="answer" class="mt-4 bg-white p-4 rounded shadow"></div>
+
+<script src="js/api.js"></script>
+<script src="js/qa.js"></script>
+</body>
+</html>
